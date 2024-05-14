@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Image, Text } from "@chakra-ui/react";
 import myPhoto from "../assets/images/eu.jpg";
 import { DownloadIcon, EmailIcon } from "@chakra-ui/icons";
 
@@ -9,38 +9,45 @@ export const Hero = () => {
             justifyContent='center'
             align='center'
             p='20px'
-            gap={4}
+            gap={15}
             border='1px solid green'
-            direction={{ base: 'column', md: 'row' }}
+            direction={{base:'column', sm:'column',md: 'row',lg: 'row'}}
             >
-                <Flex>
                 <Image 
                 src={myPhoto} 
                 alt="Minha foto" 
-                w='200px'
+                w='250px'
                 borderRadius='50%'
+                mr={{base:'0',md:'150px'}}
+                // border='2px solid white'
+                boxShadow='0 0 5px #fff' //borda com sombra
                 />
-                </Flex>
 
         
-                <Flex 
+                <Flex //flex com nome e botoes
                 border='1px solid red'
-                align='center'
-                direction='column'>
+                direction='column'
+                color='#fff'
+                
+                >
 
                     <Text
                     fontSize='50px'>Lucas Melo</Text>
 
                     <Text
-                    fontSize='40px'>I'm a Front end Developer</Text>
+                    fontSize='40px'>Frontend Developer</Text>
 
-                    <Flex gap={8}
+                    <Flex
+                    h='100px'
+                    p='20px'
+                    gap={5}
                     mt='10px'
+                    align='center'
                     justify='center'
-                    border='1px solid black'
+                    direction={{base:'column',sm:'column',md:'row'}}
                     >
-                        <Button><DownloadIcon/>Download CV</Button>
-                        <Button><EmailIcon/>Contact me</Button>
+                        <Button color='#fff' size='md' variant='outline'><DownloadIcon/>Download CV</Button>
+                        <Button color='#fff' size='md' variant='outline'><EmailIcon/>Contact me</Button>
                     </Flex>
                 </Flex>
             </Flex>
