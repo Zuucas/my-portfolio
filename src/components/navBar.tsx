@@ -1,13 +1,11 @@
 import { HamburgerIcon } from "@chakra-ui/icons"
-import { Flex, Link, Modal, Stack, HStack, VStack,
+import { Flex, Link, Modal,
     ModalOverlay,
     ModalContent,
-    ModalHeader,
-    ModalFooter,
     ModalBody,
-    ModalCloseButton,
     useDisclosure,
-    Button, } from "@chakra-ui/react"
+    VStack,
+} from "@chakra-ui/react"
 
 
 export const NavBar = () => {
