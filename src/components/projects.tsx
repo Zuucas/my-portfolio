@@ -23,9 +23,9 @@ export const Projects = () => {
             </Flex>
             <Flex
             
-            w='75%'
+            w='80%'
             // // bg='red'
-            p='2rem'
+            p='1rem'
             >
                 <Flex
                 borderRadius='30px' 
@@ -38,10 +38,19 @@ export const Projects = () => {
                     overflow='auto'                     
                     p='20px'
                     w='100%'
-                    border='1px solid white'
-                    templateColumns='repeat(3, 1fr)' 
+                    // border='1px solid white'
+                    templateColumns={{base:'repeat(1, 1fr)',sm:'repeat(2, 1fr)', md:'repeat(3, 1fr)'}} 
                     gap={6}>
-                    <GridItem w='100%' h='300px' border='1px solid #fff' borderRadius='30px' ><IndividualProject/></GridItem>
+                    <GridItem 
+                    w='100%' 
+                    h='300px' 
+                    border='1px solid #fff' 
+                    borderRadius='30px' 
+                    // p='10px'
+                    overflow='hidden'
+                    ><IndividualProject/></GridItem>
+
+
                     <GridItem w='100%' h='300px' border='1px solid #fff' borderRadius='30px' />
                     <GridItem w='100%' h='300px' border='1px solid #fff' borderRadius='30px' />
                     <GridItem w='100%' h='300px' border='1px solid #fff' borderRadius='30px' />
