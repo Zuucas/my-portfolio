@@ -48,7 +48,7 @@ export const Projects = () => {
                     borderRadius='30px' 
                     // p='10px'
                     overflow='hidden'
-                    ><IndividualProject/></GridItem>
+                    ><Link href="https://top-films-beta.vercel.app/" target="_blank"><IndividualProject/></Link></GridItem>
 
 
                     <GridItem w='100%' h='300px' border='1px solid #fff' borderRadius='30px' />
