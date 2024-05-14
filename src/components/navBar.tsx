@@ -1,8 +1,18 @@
 import { HamburgerIcon } from "@chakra-ui/icons"
-import { Flex, Link } from "@chakra-ui/react"
+import { Flex, Link, Modal, Stack, HStack, VStack,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    useDisclosure,
+    Button, } from "@chakra-ui/react"
 
 
 export const NavBar = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
     return (
         <>
             <Flex            
@@ -10,10 +20,11 @@ export const NavBar = () => {
             bg='#181818'
             align='center'
             // fontSize='1.2rem'
-            mb={{base:'40px', md:'0px'}}            
+            // mb={{base:'40px', md:'0px'}}            
             borderBottom='1px solid white'
             position='relative'
             mt='5px'
+            maxW='100vw'
             
             >
                 <Flex
@@ -22,7 +33,7 @@ export const NavBar = () => {
                 w='100vw'
                 display={{base:'none',md:'flex'}}
                 >
-                    <Link>About</Link>
+                    <Link href="#hero">About</Link>
                     <Link>Skills</Link>
                     <Link>Projects</Link>
                 </Flex>
@@ -34,10 +45,30 @@ export const NavBar = () => {
                 display={{base:'flex',md:'none'}}
                 // mr='20px'
                 >
-                    <HamburgerIcon color='white'/>
+                    <HamburgerIcon onClick={onOpen} color='white'/>
                 </Flex>
             </Flex>
             
+            <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent 
+        ml='auto' 
+        w='120px'
+        bg='#181818'
+        color='#fff'
+        >        
+          
+          <ModalBody>
+            <VStack>
+                <Link href="#hero" onClick={onClose}>About</Link>
+                <Link>Skills</Link>
+                <Link>Projects</Link>
+            </VStack>
+          </ModalBody>
+
+          
+        </ModalContent>
+      </Modal>
         </>
     )
 }

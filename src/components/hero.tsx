@@ -4,54 +4,48 @@ import { DownloadIcon, EmailIcon } from "@chakra-ui/icons";
 
 export const Hero = () => {
     return (
-        <>
+        <Flex
+        h='100vh'        
+        // border='10px solid red'
+        justify='center'
+        align='center'
+        id="hero"
+        >
             <Flex
             justifyContent='center'
             align='center'
-            p='20px'
-            gap={15}
-            border='1px solid green'
-            direction={{base:'column', sm:'column',md: 'row',lg: 'row'}}
+            // border='1px solid green'
+            direction={{base:'column', md: 'row',}}           
+            mx={{base:'0',md:'100px'}}
             >
                 <Image 
                 src={myPhoto} 
                 alt="Minha foto" 
-                w='250px'
+                w='350px'
                 borderRadius='50%'
                 mr={{base:'0',md:'150px'}}
-                // border='2px solid white'
                 boxShadow='0 0 5px #fff' //borda com sombra
                 />
 
         
                 <Flex //flex com nome e botoes
-                border='1px solid red'
+                // border='1px solid red'
                 direction='column'
                 color='#fff'
-                
+                mx={{base:'20px',md:'50px'}}
                 >
 
                     <Text
-                    fontSize='50px'>Lucas Melo</Text>
+                    fontSize='30px'>Sobre mim</Text>
 
                     <Text
-                    fontSize='40px'>Frontend Developer</Text>
+                    wordBreak='break-all'
+                    fontSize='20px'>Meu nome é Lucas Melo, tenho 25 anos. Com interesse profundo por resolver problemas através de linhas de código, sempre estou buscando aprender novas formas de lidar com problemas, explorar novas tecnologias e desenvolver soluções criativas.
+                    Além da programação, tenho um grande amor pelos animais.</Text>
 
-                    <Flex
-                    h='100px'
-                    p='20px'
-                    gap={5}
-                    mt='10px'
-                    align='center'
-                    justify='center'
-                    direction={{base:'column',sm:'column',md:'row'}}
-                    >
-                        <Button color='#fff' size='md' variant='outline'><DownloadIcon/>Download CV</Button>
-                        <Button color='#fff' size='md' variant='outline'><EmailIcon/>Contact me</Button>
-                    </Flex>
                 </Flex>
             </Flex>
             
-        </>
+        </Flex>
     );
 };

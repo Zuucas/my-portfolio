@@ -7,10 +7,12 @@ import { NavBar } from "../components/navBar"
 export const Home = () => {
     return (
         <Flex direction={'column'}
-        h='100vh' bg='#191919'>
+        // h='100vh' 
+        bg='#000'
+        >
             <NavBar/>
-            <Hero/>
             <About/>
+            <Hero/>
         </Flex>
     )
 }
