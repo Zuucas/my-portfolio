@@ -4,8 +4,8 @@ import imgTopfilms from "../assets/images/topfilms.jpeg"
 
 export const IndividualProject = () => {
     return (
-        <Flex color='white'
-        border='1px solid red'
+        <Flex 
+        // border='1px solid red'
         align='center'
         direction={'column'}>
             
