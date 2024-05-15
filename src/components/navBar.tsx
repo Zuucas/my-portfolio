@@ -29,7 +29,8 @@ export const NavBar = () => {
             
             >
                 <Button
-                ml='20px    '
+                position='fixed'
+                ml='20px'
                 onClick={toggleColorMode}>
                     <SunIcon/>
                 </Button>
