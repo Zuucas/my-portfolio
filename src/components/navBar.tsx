@@ -38,7 +38,6 @@ export const NavBar = () => {
 
 
                 <Flex
-                // color='#fff'
                 justify='space-evenly'
                 w='100vw'
                 display={{base:'none',md:'flex'}}
