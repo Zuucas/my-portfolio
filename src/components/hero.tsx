@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaWhatsappSquare  } from "react-icons/fa"
 
 
 export const Hero = () => {
-    const simbolColor = useColorModeValue("red", "#0cc0df");
+    const simbolColor = useColorModeValue("#df0026", "#0cc0df");
 
     return (
         <Flex
@@ -29,16 +29,32 @@ export const Hero = () => {
 
             <Flex direction='column'
              align='center'>
-                <Button  size='sm' variant='outline'><DownloadIcon/>Download CV</Button>
+                <Button
+                cursor='pointer'
+                size='sm' 
+                variant='outline'
+                as='a'
+                href='./Curriculo.pdf'
+                download='Curriculo.pdf'
+                ><DownloadIcon/>Download CV</Button>
                 <Flex
                 fontSize='20px'
                 gap={5}
                 
                 mt='20px'
                 >
-                    <Link _hover={{opacity: 0.5}}><FaGithub /></Link>
-                    <Link _hover={{opacity: 0.5}}><FaLinkedin /></Link>
-                    <Link _hover={{opacity: 0.5}}><FaWhatsappSquare  /></Link>
+                    <Link _hover={{opacity: 0.5}}
+                    href="https://github.com/Zuucas"
+                    target="_blank"
+                    ><FaGithub /></Link>
+                    <Link _hover={{opacity: 0.5}}
+                    href="https://www.linkedin.com/in/lucas-melo-85a16b164/"
+                    target="_blank"
+                    ><FaLinkedin /></Link>
+                    <Link _hover={{opacity: 0.5}}
+                    href="https://wa.link/mzjfoz"
+                    target="_blank"
+                    ><FaWhatsappSquare  /></Link>
                 </Flex>
             </Flex>
         </Flex>
