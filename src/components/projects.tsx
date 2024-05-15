@@ -1,7 +1,5 @@
-import { Flex, Link, Grid, GridItem, HStack, Image } from "@chakra-ui/react"
+import { Flex, Link, HStack, } from "@chakra-ui/react"
 import { ReactProjects } from "./reactProjects"
-import imgLadingFake from '../assets/images/siteFake.png'
-import imgTopFilms from '../assets/images/topFilms.png'
 
 
 
