@@ -17,7 +17,7 @@ export const NavBar = () => {
     return (
         <>
             <Flex            
-            h='5vh'
+            h='30px'
             // bg='#181818'
             align='center'
             // fontSize='1.2rem'
@@ -29,6 +29,7 @@ export const NavBar = () => {
             
             >
                 <Button
+                variant='unstyled'
                 position='fixed'
                 ml='20px'
                 onClick={toggleColorMode}>
@@ -43,8 +44,8 @@ export const NavBar = () => {
                 display={{base:'none',md:'flex'}}
                 >
                     <Link href="#hero">About</Link>
-                    <Link>Skills</Link>
-                    <Link>Projects</Link>
+                    <Link href="#Sobre">Skills</Link>
+                    <Link href="#Projects">Projects</Link>
                 </Flex>
 
                 <Flex color={colorMode === "dark" ? "white" : "black"}

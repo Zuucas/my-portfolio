@@ -1,8 +1,8 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react"
-import {  Hero } from "../components/hero"
-import { Sobre } from "../components/sobre"
-import { NavBar } from "../components/navBar"
-import { Projects } from "../components/projects"
+import {  Hero } from "../components/Hero/App"
+import { Sobre } from "../components/About/App"
+import { NavBar } from "../components/NavBar/Header"
+import { Projects } from "../components/Projects/App"
 // import { ThemeProvider } from "styled-components"
 // import { useState } from "react"
 

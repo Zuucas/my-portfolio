@@ -1,6 +1,6 @@
 import {  Image,   Grid, GridItem, Link} from "@chakra-ui/react"
-import imgLadingFake from '../assets/images/siteFake.png'
-import imgTopFilms from '../assets/images/topFilms.png'
+import imgLadingFake from '../../assets/images/siteFake.png'
+import imgTopFilms from '../../assets/images/topFilms.png'
 export const ReactProjects = () => {
     return (
         <>
@@ -26,7 +26,6 @@ export const ReactProjects = () => {
                     _hover={{opacity: 0.5}}
                     h='max-content' 
                     border='1px solid blue'
-                    // overflow='hidden'
                     ><Link href="https://top-films-beta.vercel.app/" target="_blank"><Image src={imgLadingFake}/></Link></GridItem>
 
                     <GridItem 
