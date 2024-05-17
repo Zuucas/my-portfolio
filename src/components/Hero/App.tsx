@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaWhatsappSquare  } from "react-icons/fa"
 
 export const Hero = () => {
     const simbolColor = useColorModeValue("#df0026", "#0cc0df");
+    const blackWhite = useColorModeValue("#000", "#fff");
 
     return (
         <Flex
@@ -12,7 +13,6 @@ export const Hero = () => {
         align='center'
         direction='column'
         h='100vh'
-        // border='1px solid white'
         borderBottom='1px solid #fff'
         >
             <Center
@@ -34,8 +34,8 @@ export const Hero = () => {
                 size='sm' 
                 variant='outline'
                 as='a'
-                href='./Curriculo.pdf'
-                download='Curriculo.pdf'
+                href='./CV.pdf'
+                download='CV.pdf'
                 ><DownloadIcon/>Download CV</Button>
                 <Flex
                 fontSize='20px'

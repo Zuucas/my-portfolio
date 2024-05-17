@@ -39,7 +39,7 @@ export const Projects = () => {
                 // border='2px solid green'
                 w='100%'
                 // p='1rem'
-                overflow={"hidden"}
+                // overflow={"hidden"}
                 m='20px auto'
                 
                 > 

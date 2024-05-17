@@ -14,6 +14,9 @@ export const NavBar = () => {
 
     const { colorMode, toggleColorMode } = useColorMode()
 
+    console.log("trocou para ",colorMode);
+    
+
     return (
         <>
             <Flex            
