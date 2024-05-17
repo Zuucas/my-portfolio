@@ -1,10 +1,6 @@
 import { Grid } from "@chakra-ui/react"
 import { photoList } from "../../data/photoList"
 import { PhotosLa } from "../photoItens/ladingPagePhotos"
-// import Card from '../../assets/imageProjects/card-css.png'
-// import Toms from '../../assets/imageProjects/page-toms.png'
-// import Fake from '../../assets/imageProjects/site-fake.png'
-// import Phone from '../../assets/imageProjects/iphone.png'
 
 
 

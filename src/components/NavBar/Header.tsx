@@ -21,10 +21,7 @@ export const NavBar = () => {
         <>
             <Flex            
             h='30px'
-            // bg='#181818'
             align='center'
-            // fontSize='1.2rem'
-            // mb={{base:'40px', md:'0px'}}            
             borderBottom='1px solid white'
             position='relative'
             mt='5px'
@@ -56,7 +53,6 @@ export const NavBar = () => {
                 right={5}
                 fontSize='1.5rem'
                 display={{base:'flex',md:'none'}}
-                // mr='20px'
                 >
                     <HamburgerIcon onClick={onOpen} />
                 </Flex>

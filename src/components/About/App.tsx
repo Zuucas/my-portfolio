@@ -1,6 +1,5 @@
 import {  Flex, Image, Text } from "@chakra-ui/react";
 import myPhoto from "../../assets/images/eu.jpg";
-// import { DownloadIcon, EmailIcon } from "@chakra-ui/icons";
 
 export const Sobre = () => {
 

@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaWhatsappSquare  } from "react-icons/fa"
 
 export const Hero = () => {
     const simbolColor = useColorModeValue("#df0026", "#0cc0df");
-    const blackWhite = useColorModeValue("#000", "#fff");
+    // const blackWhite = useColorModeValue("#000", "#fff");
 
     return (
         <Flex
