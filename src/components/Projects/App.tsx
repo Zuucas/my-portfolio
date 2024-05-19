@@ -10,7 +10,7 @@ export const Projects = () => {
     return (
         <Flex
         // border='1px solid red'
-        h='100vh'
+        // h='100vh'
         direction={'column'}
         align='center'
         >
