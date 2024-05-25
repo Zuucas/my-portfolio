@@ -1,4 +1,4 @@
-import { Flex, HStack, } from "@chakra-ui/react"
+import { Flex, HStack,Button } from "@chakra-ui/react"
 import { ReactProjects } from "../React/reactProjects"
 import { Route, Routes, Link  } from "react-router-dom"
 import { LandingPage } from "../LadingPage/ladingPages"
@@ -24,7 +24,9 @@ export const Projects = () => {
                 fontSize='1.5rem'
                 spacing={18}
                 >
+                    <Button value={1}>
                     <Link to='/react'>React</Link>
+                    </Button>
                     <Link to='/next'>Next</Link>
                     <Link to='/ladingpage'>HTML+CSS</Link>
                 </HStack>
@@ -50,7 +52,6 @@ export const Projects = () => {
                         <Route path="/ladingpage" element={<LandingPage/>}/>
                     </Routes>
                 
-                    {/* <ReactProjects/> */}
                     
                 </Flex>
             </Flex>
