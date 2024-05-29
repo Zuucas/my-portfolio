@@ -1,7 +1,7 @@
 import { Flex, HStack,Button } from "@chakra-ui/react"
 import { ReactProjects } from "../React/reactProjects"
 import { Route, Routes, Link  } from "react-router-dom"
-import { LandingPage } from "../LadingPage/ladingPages"
+import { LandingPage } from "../LadingPage/LandingPage"
 import { NextProjects } from "../Next/nextProjects"
 
 

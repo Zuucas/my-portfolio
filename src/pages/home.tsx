@@ -3,6 +3,7 @@ import {  Hero } from "../components/Hero/Hero"
 import { Sobre } from "../components/About/Sobre"
 import { NavBar } from "../components/NavBar/Header"
 import { Projects } from "../components/Projects/Projects"
+import { Footer } from "../components/Footer/Footer"
 
 
 export const Home = () => {
@@ -18,6 +19,7 @@ export const Home = () => {
             <Hero/>
             <Sobre/>
             <Projects/>
+            <Footer/>
             
         </Flex>
     )

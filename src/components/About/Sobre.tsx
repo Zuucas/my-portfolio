@@ -1,8 +1,10 @@
 import {  Flex, Image, Text, useColorModeValue } from "@chakra-ui/react";
-const blackWhite = useColorModeValue("#fff", "#000");
+
+
 
 export const Sobre = () => {
-
+    
+    const blackWhite = useColorModeValue("#fff", "#000");
     
     return (
         <Flex
